@@ -1,4 +1,4 @@
-# Tools for recording nd restoring web browser state
+# Tools for recording and restoring web browser state
 
 These tools aim to make it easy to take a Firefox window containing a
 particular set of tabs, each displaying a certain address, record it in a simple,
