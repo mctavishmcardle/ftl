@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+# outputs the ID of the current workspace (desktop)
+
+wmctrl -d | grep '\*' | awk -F '  ' '{print $1}'

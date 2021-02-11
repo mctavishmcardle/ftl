@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+# accepts
+#   * from stdin, a standard tab list json (output from `ftl`)
+#   * as arguments, paths to tab list json files
+
+# opens all the contained windows in the current workspace, even if they're
+# associated with other workspaces in the tab list
+
+eet $@ | jq -r '.[] | .[] | "firefox " + @sh' | parallel

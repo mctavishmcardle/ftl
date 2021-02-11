@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 lz4 = "*"
 click = "*"
+eet = {editable = true, git = "https://github.com/mctavishmcardle/eet"}
 
 [dev-packages]
 ftl = {editable = true, path = "."}
