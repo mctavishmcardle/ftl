@@ -161,7 +161,7 @@ def search_for_session_dir(firefox_dir: pathlib.Path) -> pathlib.Path:
     return pathlib.Path(session_dir_entry.path)
 
 
-@click.command(help="Write Firefox tab URLs out in JSON format")
+@click.command(help="Write Firefox tab URLs out in JSON format.")
 @click.option(
     "--workspace",
     help="A workspace whose windows' tabs' URLs should be written",
@@ -185,7 +185,7 @@ def search_for_session_dir(firefox_dir: pathlib.Path) -> pathlib.Path:
 @click.option(
     "--find-session-dir/--dont-find-session-dir",
     help="Should this script attempt to automatically determine the session directory?",
-    default=False,
+    default=True,
     show_default=True,
 )
 @click.option(

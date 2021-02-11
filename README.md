@@ -16,7 +16,7 @@ IDs to lists of the URLs of the tabs open in those windows in those workspaces.
 
     Usage: ftl [OPTIONS]
 
-      Write Firefox tab URLs out in JSON format
+      Write Firefox tab URLs out in JSON format.
 
     Options:
       --workspace TEXT                A workspace whose windows' tabs' URLs should
@@ -31,7 +31,7 @@ IDs to lists of the URLs of the tabs open in those windows in those workspaces.
       --find-session-dir / --dont-find-session-dir
                                       Should this script attempt to automatically
                                       determine the session directory?  [default:
-                                      False]
+                                      True]
 
       --firefox-dir TEXT              The directory that should searched to find
                                       the session directory  [default:
@@ -66,7 +66,7 @@ current workspace:
     ftl --find-session-dir --workspace $(ftl-get-workspace) --target tabs.json
 
 
-## Restoring tab lists:
+## Restoring tab lists
 
 
 ### `ftr`
