@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="ftl",
-    version="0.0",
+    version="0.1",
     py_modules=["ftl"],
     install_requires=["Click"],
     entry_points="""
@@ -10,7 +10,7 @@ setup(
         ftl=ftl:cli
     """,
     scripts=[
-        "get-current-workspace",
-        "open-tablist-in-firefox",
+        "ftr",
+        "ftl-get-workspace",
     ],
 )
